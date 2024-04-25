@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Application Form</legend>
+        <form action="" enctype="multipart/form-data">
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name" required>
+            <br><br>  
+
+            <label for="age">Age:</label><br>
+            <input type="number" name="age" id="age" required min="20" max="35">
+            <br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" required size="25">
+            <br><br>
+            
+            <label for="Education">Your Education:</label><br>
+            <select name="your_education" id="Education">
+                <option value="B.E">B.E</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="BCA">B.C.A</option>
+                <option value="MCA">M.C.A</option>
+            </select>
+            <br><br>  
+    
+            <label for="position">You want to apply for the position:</label><br>
+            <select name="position_applied" id="position">
+                <option value="Front End Developer">Front End Developer</option>
+                <option value="Back End Developer">Back End Developer</option>
+                <option value="Full Stack Developer">Full Stack Developer</option>
+            </select>
+            <br><br>  
+    
+            <label for="range">Price Range</label><br>
+            <input type="range" name="price_range" id="range" min="0" max="1000" step="10">
+            <br><br>
+
+            <label for="url">Url:</label><br>
+            <input type="url" name="url" id="url">
+            <br><br>
+
+
+            <label for="">Your Resume:</label><br>
+            <input type="file" name="Resume">
+            <br><br>
+    
+            <input type="submit" name="submit" value="Send Details">
+    
+        </form>
+    </fieldset>
+
+</body>
+</html>
